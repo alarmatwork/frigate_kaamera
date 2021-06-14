@@ -1,0 +1,65 @@
+mqtt:
+  host: i9
+  port: 1883
+  # Optional: topic prefix (default: shown below)
+  # WARNING: must be unique if you are running multiple instances
+  topic_prefix: frigate
+  # Optional: client id (default: shown below)
+  # WARNING: must be unique if you are running multiple instances
+  client_id: frigate
+  # Optional: user
+  #user: mqtt_user
+  # Optional: password
+  # NOTE: Environment variables that begin with 'FRIGATE_' may be referenced in {}.
+  #       eg. password: '{FRIGATE_MQTT_PASSWORD}'
+  #password: password
+  # Optional: interval in seconds for publishing stats (default: shown below)
+  stats_interval: 60
+detectors:
+  cpu1:
+    type: cpu
+  cpu2:
+    type: cpu  
+cameras:
+  saun:
+    ffmpeg:
+      input_args:
+        - -avoid_negative_ts
+        - make_zero
+        - -fflags
+        - nobuffer
+        - -flags
+        - low_delay
+        - -strict
+        - experimental
+        - -fflags
+        - +genpts+discardcorrupt
+        - -rtsp_transport
+        - tcp
+        - -stimeout
+        - '5000000'
+        - -use_wallclock_as_timestamps
+        - '1'  
+      inputs:
+        - path: rtsp://vision:{FRIGATE_RTSP_PASSWORD}@192.168.3.234:554/Streaming/Channels/1/
+        #- path: rtsp://vision:{FRIGATE_RTSP_PASSWORD}@192.168.3.234:554//cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+            - rtmp
+    width: 1280
+    height: 720
+    fps: 1
+    objects:
+      filters:
+        person:
+          # Optional: minimum width*height of the bounding box for the detected object (default: 0)
+          min_area: 5000
+          # Optional: maximum width*height of the bounding box for the detected object (default: 24000000)
+          max_area: 100000
+          # Optional: minimum score for the object to initiate tracking (default: shown below)
+          min_score: 0.5
+          # Optional: minimum decimal percentage for tracked object's computed score to be considered a true positive (default: shown below)
+          threshold: 0.7          
+      track:
+        - person
+        - dog
