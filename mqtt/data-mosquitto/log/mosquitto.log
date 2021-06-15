@@ -1,0 +1,33 @@
+1623682433: mosquitto version 2.0.11 starting
+1623682433: Config loaded from /mosquitto/config/mosquitto.conf.
+1623682433: Starting in local only mode. Connections will only be possible from clients running on this machine.
+1623682433: Create a configuration file which defines a listener to allow remote access.
+1623682433: For more details see https://mosquitto.org/documentation/authentication-methods/
+1623682433: Opening ipv4 listen socket on port 1883.
+1623682433: Opening ipv6 listen socket on port 1883.
+1623682433: Error: Address not available
+1623682433: mosquitto version 2.0.11 running
+1623682688: mosquitto version 2.0.11 terminating
+1623682688: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1623682975: mosquitto version 2.0.11 starting
+1623682975: Config loaded from /mosquitto/config/mosquitto.conf.
+1623682975: Starting in local only mode. Connections will only be possible from clients running on this machine.
+1623682975: Create a configuration file which defines a listener to allow remote access.
+1623682975: For more details see https://mosquitto.org/documentation/authentication-methods/
+1623682975: Opening ipv4 listen socket on port 1883.
+1623682975: Opening ipv6 listen socket on port 1883.
+1623682975: Error: Address not available
+1623682975: mosquitto version 2.0.11 running
+1623684776: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1623744257: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1623764921: mosquitto version 2.0.11 starting
+1623764921: Config loaded from /mosquitto/config/mosquitto.conf.
+1623764921: Starting in local only mode. Connections will only be possible from clients running on this machine.
+1623764921: Create a configuration file which defines a listener to allow remote access.
+1623764921: For more details see https://mosquitto.org/documentation/authentication-methods/
+1623764921: Opening ipv4 listen socket on port 1883.
+1623764921: Opening ipv6 listen socket on port 1883.
+1623764921: Error: Address not available
+1623764921: mosquitto version 2.0.11 running
+1623769740: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1623771541: Saving in-memory database to /mosquitto/data//mosquitto.db.
