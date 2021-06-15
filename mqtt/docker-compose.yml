@@ -1,10 +1,8 @@
 version: "3.9"
 networks:
-  your-network:
-   ipam:
-      config:
-      - subnet: 172.16.238.0/24
-        gateway: 172.16.238.1
+  default:
+    external:
+      name: localdev
 services:
   mosquitto:
     container_name: mosquitto

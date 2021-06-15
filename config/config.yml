@@ -1,5 +1,5 @@
 mqtt:
-  host: 192.168.3.47
+  host: 192.168.3.58
   port: 1883
   # Optional: topic prefix (default: shown below)
   # WARNING: must be unique if you are running multiple instances
