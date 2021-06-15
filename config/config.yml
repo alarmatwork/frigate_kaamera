@@ -66,7 +66,6 @@ cameras:
     #       # Optional: minimum decimal percentage for tracked object's computed score to be considered a true positive (default: shown below)
     #       threshold: 0.7          
     track:
-      - person
       - bicycle
       - car
       - motorcycle
@@ -75,11 +74,6 @@ cameras:
       - train
       - car
       - boat
-      - traffic light
-      - fire hydrant
-      - stop sign
-      - parking meter
-      - bench
       - bird
       - cat
       - dog
@@ -100,13 +94,9 @@ cameras:
       - snowboard
       - sports ball
       - kite
-      - baseball bat
-      - baseball glove
       - skateboard
       - surfboard
-      - tennis racket
       - bottle
-      - wine glass
       - cup
       - fork
       - knife
@@ -124,16 +114,13 @@ cameras:
       - cake
       - chair
       - couch
-      - potted plant
       - bed
-      - dining table
       - toilet
       - tv
       - laptop
       - mouse
       - remote
       - keyboard
-      - cell phone
       - microwave
       - oven
       - toaster
@@ -143,8 +130,6 @@ cameras:
       - clock
       - vase
       - scissors
-      - teddy bear
-      - hair drier
       - toothbrush
     detect:
       # Optional: enables detection for the camera (default: True)
