@@ -29,7 +29,7 @@ services:
     privileged: true # this may not be necessary for all setups
     restart: always
     #image: blakeblackshear/frigate:0.8.4-aarch64
-    image: blakeblackshear/frigate:0.8.4-amd64
+    image: blakeblackshear/frigate:0.8.4-aarch64
       # depends_on:
       #   - mosquitto
     #devices:
