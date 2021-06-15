@@ -65,7 +65,7 @@ cameras:
       yard:
         # Required: List of x,y coordinates to define the polygon of the zone.
         # NOTE: Coordinates can be generated at https://www.image-map.net/
-        coordinates: coordinates: 3840,877,3635,839,3501,694,3244,845,3102,790,2969,660,2723,628,2552,587,2246,593,2031,582,1623,498,1302,466,1178,182,1007,69,721,509,527,660,0,741,0,2160,3840,2160
+        coordinates: 3840,877,3635,839,3501,694,3244,845,3102,790,2969,660,2723,628,2552,587,2246,593,2031,582,1623,498,1302,466,1178,182,1007,69,721,509,527,660,0,741,0,2160,3840,2160
         # Optional: Zone level object filters.
         # NOTE: The global and camera filters are applied upstream.
         # filters:
