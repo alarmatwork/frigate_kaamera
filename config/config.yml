@@ -56,7 +56,7 @@ cameras:
             - record
     width: 3840
     height: 2160
-    fps: 10
+    fps: 4
     objects:
       filters:
         person:
