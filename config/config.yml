@@ -48,6 +48,7 @@ cameras:
       inputs:
         - path: rtsp://vision:{FRIGATE_RTSP_PASSWORD}@192.168.3.234:554/Streaming/Channels/1/
         #- path: rtsp://vision:{FRIGATE_RTSP_PASSWORD}@192.168.3.234:554//cam/realmonitor?channel=1&subtype=1
+          global_args: -hide_banner -loglevel info
           roles:
             - detect
             - rtmp
