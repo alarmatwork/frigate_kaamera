@@ -51,6 +51,7 @@ cameras:
           roles:
             - detect
             - rtmp
+            - clips
     width: 3840
     height: 2160
     fps: 1
@@ -58,7 +59,7 @@ cameras:
       filters:
         person:
           # Optional: minimum width*height of the bounding box for the detected object (default: 0)
-          min_area: 5000
+          min_area: 500
           # Optional: maximum width*height of the bounding box for the detected object (default: 24000000)
           max_area: 100000
           # Optional: minimum score for the object to initiate tracking (default: shown below)
