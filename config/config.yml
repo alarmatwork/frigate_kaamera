@@ -75,10 +75,6 @@ cameras:
       - train
       - car
       - boat
-      - traffic light
-      - fire hydrant
-      - stop sign
-      - parking meter
       - bench
       - bird
       - cat
@@ -98,15 +94,10 @@ cameras:
       - frisbee
       - skis
       - snowboard
-      - sports ball
       - kite
-      - baseball bat
-      - baseball glove
       - skateboard
       - surfboard
-      - tennis racket
       - bottle
-      - wine glass
       - cup
       - fork
       - knife
@@ -118,22 +109,18 @@ cameras:
       - orange
       - broccoli
       - carrot
-      - hot dog
       - pizza
       - donut
       - cake
       - chair
       - couch
-      - potted plant
       - bed
-      - dining table
       - toilet
       - tv
       - laptop
       - mouse
       - remote
       - keyboard
-      - cell phone
       - microwave
       - oven
       - toaster
@@ -143,10 +130,7 @@ cameras:
       - clock
       - vase
       - scissors
-      - teddy bear
-      - hair drier
       - toothbrush
-
     detect:
       # Optional: enables detection for the camera (default: True)
       # This value can be set via MQTT and will be updated in startup based on retained value
