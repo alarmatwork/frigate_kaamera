@@ -4,26 +4,6 @@ networks:
     external:
       name: localdev
 services:
-  # mosquitto:
-  #   container_name: mosquitto
-  #   image: eclipse-mosquitto:latest
-  #   restart: always
-  #   deploy:
-  #     resources:
-  #       limits:
-  #         memory: 256M
-  #   ports:
-  #     - "1883:1883"
-  #     - "9001:9001"
-  #   expose:
-  #     - "1883"
-  #     - "9001"
-  #   volumes:
-  #     - ./config/mosquitto.conf:/mosquitto/config/mosquitto.conf
-  #     - ./data-mosquitto/data:/mosquitto/data
-  #     - ./data-mosquitto/log:/mosquitto/log
-  #   environment:
-  #     MQTT_HOST: mosquitto  
   frigate:
     container_name: frigate
     privileged: true # this may not be necessary for all setups
