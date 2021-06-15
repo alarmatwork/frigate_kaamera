@@ -53,6 +53,7 @@ cameras:
             - detect
             - rtmp
             - clips
+            - record
     width: 3840
     height: 2160
     fps: 10
