@@ -55,7 +55,7 @@ cameras:
             - clips
     width: 3840
     height: 2160
-    fps: 1
+    fps: 10
     objects:
       filters:
         person:
