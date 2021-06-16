@@ -56,7 +56,7 @@ cameras:
             - record
     width: 3840
     height: 2160
-    fps: 2
+    fps: 1
     # Optional: zones for this camera
     # zones:
     #   # Required: name of the zone
